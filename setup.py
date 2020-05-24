@@ -16,8 +16,8 @@ with open("test_requirements.txt") as f:
     test_requirements = [req.strip() for req in f.readlines()]
 
 setup(name='Google-Search-API',
-      version='1.1.14',
-      url='https://github.com/abenassi/Google-Search-API',
+      version='1.1.15',
+      url='https://github.com/horacioibrahim/Google-Search-API',
       description='Search in google',
       author='Anthony Casagrande, Agustin Benassi',
       author_email='birdapi@gmail.com, agusbenassi@gmail.com',
@@ -25,14 +25,14 @@ setup(name='Google-Search-API',
       maintainer_email='agusbenassi@gmail.com',
       license='MIT',
       packages=[
-          'google',
-          'google.modules',
-          'google.tests'
+          'google-search-api',
+          'google-search-api.modules',
+          'google-search-api.tests'
       ],
-      package_dir={'google': 'google'},
+      package_dir={'google-search-api': 'google-search-api'},
       include_package_data=True,
       install_requires=requirements,
-      keywords="google search images api",
+      keywords="google-search-api search images api",
       classifiers=[
           'Development Status :: 3 - Alpha',
           'Intended Audience :: Developers',
